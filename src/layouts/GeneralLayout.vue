@@ -1,9 +1,12 @@
 <template>
-    <div>
+    <div >
         <header>
             <Navbar />
         </header>
-        <div></div>
+        <div>
+          <SideBar />
+           <router-view></router-view>
+        </div>
         <footer>
           <Footer />
         </footer>
@@ -17,7 +20,7 @@ export default {
   name: 'GeneralLayout',
   components: {
     Navbar,
-    Footer
+    Footer,
   }
 }
 </script>
