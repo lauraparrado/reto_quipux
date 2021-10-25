@@ -2,31 +2,44 @@
     <div class="container-fluid articulos">
         <div class="row">
             <div class="col-5 articulos__contacto">
-                <div class="container-fluid info my-5 px-0 ">
-                    <h6 class="font-weight-bold text-left">INFORMACION DE CONTACTO</h6>
-                    <div class="my-4 d-inline-block">
+                <div class="container-fluid info mt-5 px-0 ">
+                    <div class="py-5 pl-4">
+                        <h6 class="font-weight-bold text-left">INFORMACIÓN DEL CONTACTO</h6>
+                    </div>
+                    
+                    <div class="d-inline-block text-center pb-5">
                         <h6 class="font-weight-bold">Dirección</h6>
-                        <p>{{this.contacto.default.direccion}}</p>
+                        <div class="w-50 d-inline-block">
+                            <p>{{this.contacto.default.direccion}}</p>
+                        </div>
                         <h6 class="font-weight-bold">Correo electrónico</h6>
                         <p>{{this.contacto.default.correo}}</p>
                         <h6 class="font-weight-bold">Sitio Web</h6>
                         <p>{{this.contacto.default.website}}</p>
-                        <h6 class="font-weight-bold">Redes sociales</h6>
+                        <h6 class="font-weight-bold">Red social</h6>
                         <p v-for="red in this.contacto.default.redes" :key="red">
                             {{red.social}}
                         </p>
                         <h6 class="font-weight-bold">Direcció de correspondencia de video</h6>
-                        <p>{{this.contacto.default.correspondencia}}</p>
+                        <div class="w-50 d-inline-block">
+                            <p>{{this.contacto.default.correspondencia}}</p>
+                        </div>
+                        
                         <h6 class="font-weight-bold">Número de teléfonos</h6>
-                        <p v-for="telefono in this.contacto.default.telefonos" :key="telefono">
-                            {{telefono.numero}}
+                        <p>Fijo</p>
+                        <p>
+                            {{this.contacto.default.telefonos[0].numero}}
+                        </p>
+                        <p>Celular</p>
+                        <p>
+                            {{this.contacto.default.telefonos[1].numero}}
                         </p>
                     </div>
                 </div>
                 
             </div>
             <div class="col-7  articulos__galeria">
-                <div class="container-fluid cart-carousel my-5 px-0 ">
+                <div class="container-fluid cart-carousel mt-5 mb-4 px-0 ">
                     <div class="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -51,7 +64,11 @@
                     </div>
                 </div>
                 
-                <div></div>
+                <div class="container-fluid cart-art px-0 d-flex flex-wrap">
+                    <div v-for="articulo in this.articulos.default" :key="articulo.id" class="col-3">
+                        <ItemArt :image="articulo.imagen" :title="articulo.titulo" :description="articulo.descripcion" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -59,8 +76,11 @@
 <script>
 import * as dataContacto from "../jsonfile/info-contacto.json";
 import * as dataArticulo from "../jsonfile/articulos.json";
+import ItemArt from "../components/ItemArt.vue"
 
 export default {
+    name:"Articulo",
+    components:{ItemArt},
     data(){
         return{
             contacto:dataContacto,

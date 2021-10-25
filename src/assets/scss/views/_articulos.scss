@@ -1,4 +1,5 @@
 .articulos{
+    position: relative;
     height: 100%;
     &__contacto{
         .info{
@@ -11,13 +12,19 @@
         .cart-carousel{
             background-color: white;
             width: 100%;
-            height: 280px;
+            height: 355px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .carousel{
             width: 220px;
+        }
+
+        .cart-art{
+            background-color: white;
+            height: 400px;
+            overflow-y:scroll;
         }
     }
 }
