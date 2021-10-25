@@ -1,26 +1,59 @@
 <template>
     <div >
-        <header>
+        <Sidebar :items="sidebarItems" />
+        <div style="margin-left: 50px">
+          <header>
             <Navbar />
-        </header>
-        <div class="main">
-          <SideBar />
-           <router-view></router-view>
+          </header>
+          <div>
+            <router-view></router-view>
+          </div>
+          <footer>
+            <Footer />
+          </footer>
         </div>
-        <footer>
-          <Footer />
-        </footer>
     </div>
 </template>
 
 <script>
 import Footer from './components/Footer.vue'
 import Navbar from './components/Navbar.vue'
+import Sidebar from './components/Sidebar.vue'
 export default {
   name: 'GeneralLayout',
+  data() {
+    return {
+      sidebarItems:[{
+  "title": "Empresas",
+  "subitems": [
+    {
+      "title": "Empresas",
+      "urlName": "/"
+    }
+  ]
+}, {
+  "title": "Artículos",
+  "subitems": [
+    {
+      "title": "Artículos",
+      "urlName": "/"
+    }
+  ]
+}, {
+  "title": "Colaboradores",
+  "subitems": [
+    {
+      "title": "Colaboradores",
+      "urlName": "/"
+    }
+  ]
+}]
+    }
+  },
   components: {
     Navbar,
     Footer,
+    Sidebar,
   }
 }
 </script>

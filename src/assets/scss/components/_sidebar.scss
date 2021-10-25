@@ -1,0 +1,101 @@
+.sidebar-collapsed {
+    width: 50px !important;
+
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #302634;
+  overflow-x: hidden;
+  color: white;
+
+  &__header {
+      display: grid;
+      grid: auto / repeat(2, 1fr);
+      align-items: center;
+      margin: 30px 30px 40px 15px;
+
+      &__icon {
+          justify-self: start;
+      }
+
+      &__logo {
+          justify-self: end;
+      }
+  }
+
+  &__content {
+      
+      &__title {
+        display: block;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: start;
+        padding: 0 0 5px 15px;
+        color: #929292;
+        border-bottom: #929292 1px solid;
+      }
+
+      &__menu {
+          list-style: none;
+          padding: 0;
+
+          &__item-open {
+             background-color: #201923;
+
+             .sidebar__content__menu__item__link {
+                  color: #09d69f !important;
+            }
+         }
+
+          &__item {
+              display: grid;
+              align-items: center;
+              grid: auto / 10% 80% 10%;
+              padding: 25px 10px 25px 15px;
+              color: white;
+
+              &__icon {
+                  justify-self: start;
+              }
+
+              &__link {
+                  text-align: start;
+                  text-transform: uppercase;
+                  color: white;
+              }
+
+              &__arrow {
+                  justify-self: end;
+              }
+
+              &__submenu {
+                  list-style: none;
+                  grid-column: 1 / 4;
+                  padding: 10px 0 0 5px;
+                  justify-self: start;
+
+                  &__item {
+                      margin-top: 10px;
+                      
+                      &__link {
+                          color: white;
+                          text-decoration:none;
+                      }
+                  }
+
+                  &__item::before {
+                      color: #707070;
+                      margin-right: 30px;
+                      content: "__";
+                }  
+              }
+          }
+      }
+  }
+}
