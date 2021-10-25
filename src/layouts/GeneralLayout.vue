@@ -1,11 +1,11 @@
 <template>
   <div>
     <Sidebar :items="sidebarItems" />
-    <div style="margin-left: 50px">
+    <div class="main">
       <header>
         <Navbar />
       </header>
-      <div class="main" >
+      <div  >
         <router-view></router-view>
       </div>
       <footer>

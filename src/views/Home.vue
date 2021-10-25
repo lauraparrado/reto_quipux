@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid home">
+  <div class="container-fluid home ">
     <div class="row">
       <div class="col-12 col-lg-8 pt-5 mt-5 home__services">
         <div class="my-5">
