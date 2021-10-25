@@ -68,8 +68,8 @@
         <div class="mt-4 home__tramites__detail">
           
           <div class="py-4 pl-4">
-            <span>Trámites en tu mano</span>
-            <p>Ahora podras hacer todos tus trámites desde la comodida de tu casa, desde cualquier dispositivo computadora, tablet o movil</p>
+            <span>{{this.slider.default.title}}</span>
+            <p>{{this.slider.default.description}}</p>
             <div class="mt-2">
               <Slider />
             </div>
@@ -84,6 +84,8 @@
 <script>
 import HomeServices from "../components/HomeServices.vue"
 import Slider from "../components/Slider.vue"
+import * as dataContacto from "../jsonfile/slider.json";
+
 export default {
   name: 'Home',
   components: {
@@ -92,7 +94,7 @@ export default {
 
   data(){
     return{
-    
+      slider:dataContacto
     }
   }
 }
