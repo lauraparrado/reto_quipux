@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a v-if="isHome=='Home'"  href="#">
+        <a v-if="router=='Home'"  href="#">
             <img class="w-75" src="@/assets/logo.png">
         </a>
         <a v-else class="navbar-brand navbar__house" href="#">
@@ -12,12 +12,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarText">
-            <ul v-if="isHome!='Home'" class="navbar__nav">
+            <ul v-if="router!='Home'" class="navbar__nav">
                 <li class="navbar__item">
                     <a class="navbar__link" href="#">EMPRESAS</a>
                     <div class="line"></div>
                 </li>
-                <li class="navbar__item">
+                <li v-if="router=='Articulo'" class="navbar__item">
+                    <a class="navbar__link" href="#">ARTÍCULO</a>
+                    <div class="line"></div>
+                </li>
+                <li v-else class="navbar__item">
                     <a class="navbar__link" href="#">NOMBRE EMPRESA</a>
                     <div class="line"></div>
                 </li>
@@ -45,10 +49,10 @@
 export default {
     name:"navbar",
     props:{
-        isHome:{
+        router:{
             type:String,
             required:true
-        }
+        },
     }
 }
 </script>

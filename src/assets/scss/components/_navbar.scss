@@ -27,6 +27,12 @@
         text-decoration: none;
         padding-bottom: 10px;
         text-decoration: none;
+
+        
+    }
+
+    .upper-case{
+        text-transform: uppercase;
     }
 
     &__link:hover, &__link:focus-within{

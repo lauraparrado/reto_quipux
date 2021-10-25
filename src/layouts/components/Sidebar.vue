@@ -15,12 +15,12 @@
           />
         </svg>
       </span>
-      <img
+      <router-link  :to="'/'"><img
         class="sidebar__header__logo"
         src="@/assets/logo-white.svg"
         alt="logo-white"
         v-show="!isCollapsed"
-      />
+      /></router-link>
     </div>
     <div class="sidebar__content">
       <span class="sidebar__content__title" v-show="!isCollapsed"

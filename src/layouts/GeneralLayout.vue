@@ -2,7 +2,7 @@
         <Sidebar :items="sidebarItems" />
         <div class="main">
           <header>
-            <Navbar :isHome="$route.name" />
+            <Navbar :router="$route.name" />
           </header>
           <div>
             <router-view></router-view>
@@ -28,7 +28,7 @@ export default {
           subitems: [
             {
               title: "Empresas",
-              urlName: "/",
+              urlName: "/empresa",
             },
           ],
         },
