@@ -1,0 +1,23 @@
+
+{
+    "direccion":"Carrera 52 # 91-66 Medellin Colombia",
+    "correo": "usuarioapellido@hotmail.com",
+    "website":"www.usuarioapellido.com",
+    "redes":[
+        {
+            "social":"www.instagram.com/usuarioapellido"
+        },
+        {
+            "social":"www.linkeind.com/usuarioapellido"
+        }
+    ],
+    "correspondencia":"Carrera 52 # 91-66 Envigado Colombia",
+    "telefonos":[
+        {
+            "numero":"+57 (4) 313-70-00"
+        },
+        {
+            "numero":"(312)313-44-77"
+        }
+    ]
+}
