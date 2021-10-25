@@ -1,11 +1,9 @@
 .navbar{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    background-color: white;
     padding-bottom: 0 !important;
-    
     &__nav {
+        
         top:0;
         display: flex;
         padding: 0;
@@ -41,6 +39,7 @@
 
 
     &__profile {
+        left: 0;
         display:flex;
         position: relative;
         align-items: center;

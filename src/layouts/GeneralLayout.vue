@@ -1,5 +1,4 @@
 <template>
-    <div >
         <Sidebar :items="sidebarItems" />
         <div class="main">
           <header>
@@ -12,7 +11,6 @@
             <Footer />
           </footer>
         </div>
-    </div>
 </template>
 
 <script>

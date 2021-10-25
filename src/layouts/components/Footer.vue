@@ -1,4 +1,5 @@
 <template>
-    <div class="footer"> <img  src="@/assets/logo.png"></div>
-   
+    <div class="footer d-flex justify-content-center"> 
+        <img  src="@/assets/logo.png">
+    </div>
 </template>

@@ -55,7 +55,7 @@
         </div>
       </div>
       
-      <div class="col-12 col-lg-4 py-5 px-5 home__tramites">
+      <div class="col-12 col-lg-4 pt-5 px-5 home__tramites">
         <div class="d-flex justify-content-center justify-content-lg-start ">
           <img src="@/assets/resource-1.png">
         </div>
