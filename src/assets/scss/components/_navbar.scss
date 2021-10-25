@@ -1,5 +1,10 @@
 .navbar{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 0 !important;
+    
     &__nav {
         top:0;
         display: flex;
@@ -40,6 +45,7 @@
         position: relative;
         align-items: center;
         padding-right: 1.5vw;
+        margin-bottom: 0.5rem;
 
         img{
             width:30px;

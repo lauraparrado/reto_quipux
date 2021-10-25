@@ -1,18 +1,18 @@
 <template>
-  <div>
-    <Sidebar :items="sidebarItems" />
-    <div class="main">
-      <header>
-        <Navbar />
-      </header>
-      <div  >
-        <router-view></router-view>
-      </div>
-      <footer>
-        <Footer />
-      </footer>
+    <div >
+        <Sidebar :items="sidebarItems" />
+        <div class="main">
+          <header>
+            <Navbar />
+          </header>
+          <div>
+            <router-view></router-view>
+          </div>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
