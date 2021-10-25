@@ -2,7 +2,7 @@
         <Sidebar :items="sidebarItems" />
         <div class="main">
           <header>
-            <Navbar />
+            <Navbar :isHome="$route.name" />
           </header>
           <div>
             <router-view></router-view>
