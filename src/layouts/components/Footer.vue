@@ -1,3 +1,4 @@
 <template>
-    <img class="footer" src="@/assets/logo.png">
+    <div class="footer"> <img  src="@/assets/logo.png"></div>
+   
 </template>

@@ -1,15 +1,17 @@
 <template>
     <div >
-        <header>
+        <Sidebar :items="sidebarItems" />
+        <div style="margin-left: 50px">
+          <header>
             <Navbar />
-        </header>
-        <div>
-          <Sidebar :items="sidebarItems" />
-           <router-view></router-view>
+          </header>
+          <div>
+            <router-view></router-view>
+          </div>
+          <footer>
+            <Footer />
+          </footer>
         </div>
-        <footer>
-          <Footer />
-        </footer>
     </div>
 </template>
 
