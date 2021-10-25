@@ -1,6 +1,4 @@
 .home{
-    background-color: #f8f8f8;
-    height: 100%;
     &__services{
         text-align: start;
         .question{
@@ -103,4 +101,7 @@
         }
     }
     
+    .slider_home{
+        z-index: 6;
+    }
 }

@@ -54,6 +54,7 @@
           </div>
         </div>
       </div>
+      
       <div class="col-12 col-lg-4 py-5 px-5 home__tramites">
         <div class="d-flex justify-content-center justify-content-lg-start ">
           <img src="@/assets/resource-1.png">
@@ -65,15 +66,16 @@
         </div>
         
         <div class="mt-4 home__tramites__detail">
+          
           <div class="py-4 pl-4">
             <span>Trámites en tu mano</span>
             <p>Ahora podras hacer todos tus trámites desde la comodida de tu casa, desde cualquier dispositivo computadora, tablet o movil</p>
             <div class="mt-2">
-              <span>1/4</span>
-
+              <Slider />
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -81,10 +83,11 @@
 
 <script>
 import HomeServices from "../components/HomeServices.vue"
+import Slider from "../components/Slider.vue"
 export default {
   name: 'Home',
   components: {
-    HomeServices
+    HomeServices, Slider
   },
 
   data(){
