@@ -1,6 +1,6 @@
 <template>
-    <div class="home-services">
-        <h4 class="title">{{title}}</h4>
+    <div class="home-services my-2">
+        <h5 class="title">{{title}}</h5>
         <p class="description">{{description}}</p>
         <button class="button my-3">{{textButton}}</button>
     </div>

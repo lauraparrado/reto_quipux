@@ -67,14 +67,6 @@ export default {
             articulos:dataArticulo
         }
     },
-    created(){
-        this.initData();
-    },
-    methods: {
-        initData(){
-            console.log(this.articulos.default);
-        }
-    },
     
 }
 </script>
