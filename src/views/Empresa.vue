@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid empresa pb-1">
         <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <div class="container-fluid info bg-white mt-5 px-0 ">
                     <div class="py-5 pl-4">
                         <h6 class="font-weight-bold text-left">INFORMACIÓN DE LA EMPRESA</h6>
@@ -32,13 +32,13 @@
                 </div>
                 
             </div>
-            <div class="col-7  empresa__contacto">
+            <div class="col -12  col-lg-7  empresa__contacto">
                 <div class="container-fluid info bg-white mt-5 px-0">
                     <div class="py-5 pl-4">
                         <h6 class="font-weight-bold text-left">INFORMACIÓN DEL CONTACTO</h6>
                     </div>
                     <div class="row">
-                        <div class="col-6 d-inline-block ">
+                        <div class="col-md-6 d-inline-block ">
                             <div class="pt-5">
                                 <h6 class="font-weight-bold">Dirección</h6>
                                 <div class="w-50 d-inline-block">
@@ -60,7 +60,7 @@
                                 </p>
                             </div> 
                         </div>
-                        <div class="col-6 d-inline-block empresa__contacto__col">
+                        <div class="col-md-6 d-inline-block empresa__contacto__col">
                             <h6 class="font-weight-bold">Direcció de correspondencia de video</h6>
                             <div class="w-50 d-inline-block">
                                 <p>{{this.contacto.default.correspondencia}}</p>

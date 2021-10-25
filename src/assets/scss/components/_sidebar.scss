@@ -10,9 +10,9 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #302634;
+  background-color: $bg-sidebar;
   overflow-x: hidden;
-  color: white;
+  color: $bg-item;
 
   &__header {
       display: grid;
@@ -37,8 +37,8 @@
         width: 100%;
         text-align: start;
         padding: 0 0 5px 15px;
-        color: #929292;
-        border-bottom: #929292 1px solid;
+        color: $secondary;
+        border-bottom: $secondary 1px solid;
       }
 
       &__menu {
@@ -46,10 +46,10 @@
           padding: 0;
 
           &__item-open {
-             background-color: #201923;
+             background-color: $bg-item-sidebar;
 
              .sidebar__content__menu__item__link {
-                  color: #09d69f !important;
+                  color: $item-sidebar !important;
             }
          }
 
@@ -58,7 +58,7 @@
               align-items: center;
               grid: auto / 10% 80% 10%;
               padding: 25px 10px 25px 15px;
-              color: white;
+              color: $bg-item;
 
               &__icon {
                   justify-self: start;
@@ -67,7 +67,7 @@
               &__link {
                   text-align: start;
                   text-transform: uppercase;
-                  color: white;
+                  color: $bg-item;
               }
 
               &__arrow {
@@ -84,13 +84,13 @@
                       margin-top: 10px;
                       
                       &__link {
-                          color: white;
+                          color: $bg-item;
                           text-decoration:none;
                       }
                   }
 
                   &__item::before {
-                      color: #707070;
+                      color: $secondary;
                       margin-right: 30px;
                       content: "__";
                 }  

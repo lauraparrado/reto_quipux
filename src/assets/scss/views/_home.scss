@@ -6,7 +6,7 @@
         text-align: start;
         .question{
             font-size: 40px;
-            color: #0381D8;
+            color: $sub-primary;
             font-weight: 700;
             margin-left: 10px;
         }
@@ -15,17 +15,17 @@
         }
 
         &__chart{
-            background-color: white;
+            background-color: $bg-item;
         }
     }
 
     &__search{
-        border: 1px solid #0970B8 ;
+        border: 1px solid $primary;
         &__select{
             align-items: center;
             height: 35px;
-            border-right:1px solid #90cdf7 ;
-            background-color: #c7e4f7;
+            border-right:1px solid $sub-primary ;
+            background-color: $bg-primary;
 
             select{
                 appearance: none;
@@ -35,9 +35,9 @@
                 padding: 7px 10px;
                 outline: 0;
                 font-size: 12px;
-                color: #0381D8;
+                color: $sub-primary;
                 border: none;
-                background-color: #c7e4f7;
+                background-color: $bg-primary;
                 cursor: pointer;
             }   
             
@@ -57,8 +57,8 @@
             display: grid;
             place-items: center;
             height: 35px;
-            color: white;
-            background-color: #0381D8;
+            color: $bg-item;
+            background-color: $sub-primary;
         }
     }
 
@@ -76,25 +76,25 @@
             position: relative;
             margin-top: 220px;
             height: 60px;
-            background-color: rgba($color:#f8f8f8, $alpha: .9);
+            background-color: rgba($color:$bg-color, $alpha: .9);
             z-index: 2;
             display: grid;
             place-items: center;
 
             span{
                 font-size: 30px;
-                color: #0970B8;
+                color: $primary;
                 font-weight: 700;
             }
         }
 
         &__detail{
-            background-color: white;
-            border-left: 2px solid #0970B8;
+            background-color: $bg-item;
+            border-left: 2px solid $primary;
             text-align: start;
 
             span{
-                color: #0970B8;
+                color: $primary;
                 font-weight: 700;
             }
 

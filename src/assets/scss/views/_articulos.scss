@@ -3,16 +3,16 @@
     height: 100%;
     &__contacto{
         .info{
-            background-color: white;
+            background-color: $bg-item;
         }
        
     }
 
     &__galeria{
         .cart-carousel{
-            background-color: white;
+            background-color: $bg-item;
             width: 100%;
-            height: 355px;
+            height: 310px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,7 +22,7 @@
         }
 
         .cart-art{
-            background-color: white;
+            background-color: $bg-item;
             height: 400px;
             overflow-y:scroll;
         }

@@ -1,9 +1,10 @@
+@import "./varibles";
 @import "components";
 @import "views";
 
 html, body {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: $bg-color;
     min-height: 100%;
     position: relative;
 }

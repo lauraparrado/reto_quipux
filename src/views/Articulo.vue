@@ -1,9 +1,9 @@
 <template>
-    <div class="container-fluid articulos">
+    <div class="container-fluid articulos pb-1">
         <div class="row">
-            <div class="col-5 articulos__contacto">
-                <div class="container-fluid info mt-5 px-0 ">
-                    <div class="py-5 pl-4">
+            <div class="col-12 col-md-5 articulos__contacto">
+                <div class="container-fluid info mt-4 px-0 ">
+                    <div class="py-4 pl-4">
                         <h6 class="font-weight-bold text-left">INFORMACIÓN DEL CONTACTO</h6>
                     </div>
                     
@@ -38,8 +38,8 @@
                 </div>
                 
             </div>
-            <div class="col-7  articulos__galeria">
-                <div class="container-fluid cart-carousel mt-5 mb-4 px-0 ">
+            <div class="col-12 col-md-7  articulos__galeria">
+                <div class="container-fluid cart-carousel mt-4 mb-4 px-0 ">
                     <div class="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -65,7 +65,7 @@
                 </div>
                 
                 <div class="container-fluid cart-art px-0 d-flex flex-wrap">
-                    <div v-for="articulo in this.articulos.default" :key="articulo.id" class="col-3">
+                    <div v-for="articulo in this.articulos.default" :key="articulo.id" class="col-6 col-sm-3 col-md-4 col-lg-3">
                         <ItemArt :image="articulo.imagen" :title="articulo.titulo" :description="articulo.descripcion" />
                     </div>
                 </div>
