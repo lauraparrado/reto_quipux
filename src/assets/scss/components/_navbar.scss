@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: baseline;
     margin-top: 3vh;
+    padding-bottom: 0 !important;
+    background-color: white;
+    
     &__nav {
         display: flex;
         padding: 0;
@@ -43,6 +46,7 @@
         position: relative;
         align-items: center;
         padding-right: 1.5vw;
+        margin-bottom: 0.5rem;
 
         img{
             width:30px;
